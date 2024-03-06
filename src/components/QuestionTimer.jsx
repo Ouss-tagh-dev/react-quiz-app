@@ -4,7 +4,10 @@ function QuestionTimer({ timeout, onTimeout }) {
   const [reminingTime, setReminingTime] = useState(timeout);
 
   useEffect(() => {
-    setTimeout(onTimeout, timeout);
+    const timer = setTimeout(onTimeout, timeout);
+    return () => {
+      clearTimeout(timer);
+    };
   }, [timeout, onTimeout]);
 
   useEffect(() => {
