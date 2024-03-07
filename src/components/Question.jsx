@@ -13,6 +13,7 @@ function Question({ questionIndex, onSelectAnswer, onSkipAnswer }) {
 
   if (answer.selectedAnswer) {
     timer = 1000;
+
   }
 
   if (answer.isCorrect !== null) {
@@ -50,7 +51,7 @@ function Question({ questionIndex, onSelectAnswer, onSkipAnswer }) {
       />
       <h1>{QUESTIONS[questionIndex].text}</h1>
       <Answers
-        question
+        
         answers={QUESTIONS[questionIndex].answers}
         selectedAnswer={answer.selectedAnswer}
         answerState={answerState}

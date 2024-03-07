@@ -23,11 +23,14 @@ function Answers({ answers, selectedAnswer, answerState, onSelect }) {
           cssClasses = answerState;
         }
 
+        const isDisabled = answerState !== "" && !isSelected;
+
         return (
           <li key={answer} className="answer">
             <button
               onClick={() => onSelect(answer)}
               className={cssClasses}
+              disabled={isDisabled}
             >
               {answer}
             </button>
