@@ -12,19 +12,19 @@ This is a simple quiz application built using React. It presents users with a se
 
 ### Clone the Repository
 
-bash```
+```
 git clone https://github.com/Ouss-tagh-dev/react-quiz-app.git
 ```
 
 ### Navigate to the Project Directory
 
-bash```
+```
 cd react-quiz-app
 ```
 
 ### Install Dependencies and Run the Application
 
-bash```
+```
 npm install
 npm run dev
 ```
